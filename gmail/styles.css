@@ -1,0 +1,41 @@
+* {
+  font-family: Roboto;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 5vh 95vh;
+  grid-template-columns: 20vw 1fr 20vw 15vw;
+}
+
+.gmail {
+  background-color: lightblue;
+}
+
+.search {
+  background-color: teal;
+}
+
+.icons {
+  background-color: lightcyan;
+  grid-column: 3 / -1;
+}
+
+.folders {
+  background-color: tomato;
+}
+
+.mail {
+  background-color: darkred;
+}
+
+.settings {
+  background-color: pink;
+}
+
+.apps {
+  background-color: red;
+}
