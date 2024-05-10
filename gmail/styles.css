@@ -39,3 +39,24 @@
 .apps {
   background-color: red;
 }
+
+@media (max-width: 860px) {
+  /* Make the primary elements occupy more space */
+  .mail {
+    grid-column: 2 / -1;
+  }
+  .folders {
+    grid-column: 1 / span 1;
+  }
+  .search {
+    grid-column: 2 / span 2;
+  }
+  .icons {
+    grid-column: 4 / span 1;
+  }
+  /* Hide unnecessary functionality */
+  .settings,
+  .apps {
+    display: none;
+  }
+}

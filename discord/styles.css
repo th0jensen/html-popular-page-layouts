@@ -29,3 +29,16 @@
   display: grid;
   grid-template-rows: 5vh 1fr 5vh;
 }
+
+@media (max-width: 860px) {
+  /* Discord is all about chatting right? */
+  .chat-window {
+    grid-column: 1/-1;
+  }
+  /* Navigation items can be accessed from a back button */
+  /* or a hamburger menu */
+  .icons,
+  .server-overview {
+    display: none;
+  }
+}

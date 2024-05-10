@@ -8,12 +8,12 @@
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-rows: 5vh 95vh;
+  grid-template-rows: 50px 1fr;
   grid-template-columns: 20vw 1fr 20vw;
 }
 
 .navbar {
-  grid-row: 1 / 1;
+  grid-row: 1 / span 1;
   grid-column: 1 / -1;
   background-color: whitesmoke;
 }
@@ -121,4 +121,16 @@
   background-color: whitesmoke;
   border-radius: 15px;
   margin: 10px;
+}
+
+@media (max-width: 860px) {
+  /* Hide the sidebars, they can be accessed from other menus */
+  .left,
+  .right {
+    display: none;
+  }
+  /* Make the main feed take the entire screen */
+  .main {
+    grid-column: 1/-1;
+  }
 }
